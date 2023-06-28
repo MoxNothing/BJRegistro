@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cregistro.DDatos">
+   <children>
+      <Label layoutX="75.0" layoutY="114.0" text="Nombre:" />
+      <Label layoutX="75.0" layoutY="156.0" text="Apellido:" />
+      <Label layoutX="75.0" layoutY="198.0" text="Genero : " />
+      <Label layoutX="79.0" layoutY="239.0" text="Grado :" />
+      <Label layoutX="77.0" layoutY="321.0" text="Modalidad :" />
+      <Label layoutX="77.0" layoutY="283.0" text="Carrera :" />
+      <Label layoutX="75.0" layoutY="403.0" text="Duracion :" />
+      <Label layoutX="78.0" layoutY="362.0" text="Monto :" />
+      <TextField fx:id="nombreTextField" layoutX="186.0" layoutY="111.0" prefHeight="26.0" prefWidth="204.0" />
+      <TextField fx:id="apellidoTextField" layoutX="183.0" layoutY="153.0" prefHeight="26.0" prefWidth="204.0" />
+      <TextField fx:id="generoTextField" layoutX="186.0" layoutY="235.0" prefHeight="26.0" prefWidth="204.0" />
+      <ChoiceBox fx:id="gradoChoiceBox" layoutX="186.0" layoutY="204.0" prefHeight="26.0" prefWidth="204.0" />
+      <ChoiceBox fx:id="modalidadChoiceBox" layoutX="185.0" layoutY="318.0" prefHeight="26.0" prefWidth="204.0" />
+      <TextField fx:id="carreraTextField" layoutX="186.0" layoutY="280.0" prefHeight="26.0" prefWidth="204.0" />
+      <Label layoutX="143.0" layoutY="43.0" text="Registro de Alumnos">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="montoLabel" layoutX="186.0" layoutY="363.0" text="Label" />
+      <Label fx:id="duracionLabel" layoutX="189.0" layoutY="404.0" text="Label" />
+      <Button layoutX="354.0" layoutY="469.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="135.0" onAction="#generarReporte" text="Reporte" />
+      <Button layoutX="135.0" layoutY="469.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="135.0" onAction="#limpiarCampos" text="Limpiar" />
+   </children>
+</AnchorPane>
